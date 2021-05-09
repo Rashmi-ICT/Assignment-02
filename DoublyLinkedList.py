@@ -2,7 +2,7 @@ from Node import Node
 
 
 class DoublyLinkedList: # create a new class  DoublyLinkedList
-    def __init__(self): # then create a constractor
+    def __init__(self): # then create a constructor
         self.head = Node() # creat a head and put on node
         self.head = None
         self.len = 0
