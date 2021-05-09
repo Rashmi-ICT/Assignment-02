@@ -8,7 +8,7 @@ class DoublyLinkedList: # create a new class  DoublyLinkedList
         self.len = 0
 
     def print_LL(self):
-        if self.head is None:  # ccffjdgjb
+        if self.head is None:
             print("linked list is empty")
 
         else:
@@ -56,7 +56,7 @@ class DoublyLinkedList: # create a new class  DoublyLinkedList
         self.len += 1
 
     def add_end(self, data):
-        new_node = Node()
+        new_node = Node()  # create new node
         new_node.setData(data)
         if self.head is None:
             self.head = new_node
