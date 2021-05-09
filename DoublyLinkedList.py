@@ -56,7 +56,7 @@ class DoublyLinkedList: # create a new class  DoublyLinkedList
         self.len += 1
 
     def add_end(self, data):
-        new_node = Node()  # create new node
+        new_node = Node()
         new_node.setData(data)
         if self.head is None:
             self.head = new_node
