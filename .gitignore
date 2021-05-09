@@ -1,0 +1,11 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+/.git
+/.idea
+/__pycache__
+# Datasource local storage ignored files
+/../../../../../../:\Users\Rashmi\Desktop\doubly\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
