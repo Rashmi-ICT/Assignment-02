@@ -9,7 +9,7 @@ class DoublyLinkedList:  # create a new class  DoublyLinkedList
 
     def print_LL(self):  # method to foreword printing
         if self.head is None:  # check head is none or not
-            print("linked list is empty")  # if head = none, print a massage
+            print("linked list is empty")  #if head = none, print a massage
 
         else:  # then create a variable as n and assign  head  to it
             n = self.head
