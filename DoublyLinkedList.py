@@ -15,18 +15,18 @@ class DoublyLinkedList: # create a new class  DoublyLinkedList
             n = self.head
             while n is not None: # while n is not none print the value of n and get next value of the DoublyLinkedList in to n
                 print(n.data, "-->", end=' ')
-                n = n.nref
+                n = n.nref   # when n is none loop will stop
 
-    def print_LL_reverse(self):
+    def print_LL_reverse(self):  # method to backword printing
         print()
-        if self.head is None:
-            print("Linked list is empty")
+        if self.head is None:  # check head is none or not
+            print("Linked list is empty")  # if head = none, print a massage
 
         else:
-            n = self.head
-            while n.nref is not None:
+            n = self.head # create a variable and assign  head to it.
+            while n.nref is not None: # get the next value of the n and run loop until next value of the n is not none to get next of the n
                 n = n.nref
-            while n is not None:
+            while n is not None:  #
                 print(n.data, "-->", end=" ")
                 n = n.pref
 
