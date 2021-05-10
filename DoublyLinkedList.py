@@ -4,16 +4,16 @@ from Node import Node
 class DoublyLinkedList: # create a new class  DoublyLinkedList
     def __init__(self): # then create a constructor
         self.head = Node() # creat a head and put on node
-        self.head = None
-        self.len = 0
+        self.head = None  # defind head as none
+        self.len = 0     # defind DoublyLinkedList lenght as 0
 
-    def print_LL(self):
-        if self.head is None:
-            print("linked list is empty")
+    def print_LL(self):   # method to forword printing
+        if self.head is None: # check head is none or not
+            print("linked list is empty") # if head = none, print a massage
 
-        else:
+        else:               # then create a variable as n and assign  head  to it
             n = self.head
-            while n is not None:
+            while n is not None: # while n is not none print the value of n and get next value of the DoublyLinkedList in to n
                 print(n.data, "-->", end=' ')
                 n = n.nref
 
@@ -34,8 +34,7 @@ class DoublyLinkedList: # create a new class  DoublyLinkedList
 
     def insert_empty(self, data):  # we create insert empty link list and take parameter self and data
         if self.head is None:  # firstly we check list empty or not
-            new_node = Node(
-                data)  # if it is none then create new node and we create a node using node class and pass the data
+            new_node = Node(data)  # if it is none then create new node and we create a node using node class and pass the data
             self.head = new_node  # after creating node we point to new node
             self.len += 1
 
