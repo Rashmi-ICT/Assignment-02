@@ -158,7 +158,7 @@ class DoublyLinkedList:  # create a new class  DoublyLinkedList
             while count != pos:  # run loop until count != position
                 n = n.nref  # get the next of the n in to n
                 count += 1  # increase count by 1
-            return n.data  # return  the data of the n
+            return n.data  #  return  the data of the n
 
     def Dobly_Length(self):  # create a new function for the doubly length
         n = self.head  # create a variable n and assign the head
