@@ -32,6 +32,6 @@ print("\n")
 '''print(d.search_given(3))'''
 
 print("\n")
-x = d.Dobly_Length()
+x = d.Doubly_Length()
 print("length",x)
 
