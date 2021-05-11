@@ -160,7 +160,7 @@ class DoublyLinkedList:  # create a new class  DoublyLinkedList
                 count += 1  # increase count by 1
             return n.data  # return  the data of the n
 
-    def Dobly_Length(self):  # create a new function for the doubly length
+    def Doubly_Length(self):  # create a new function for the doubly length
         n = self.head  # create a variable n and assign the head
         count = 0  # create a variable and set it value as 0
         while n is not None:  # run loop until n is not none
