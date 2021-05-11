@@ -9,7 +9,7 @@ class DoublyLinkedList:  # create a new class  DoublyLinkedList
 
     def print_LL(self):  # method to foreword printing
         if self.head is None:  # check head is none or not
-            print("linked list is empty")  #if head = none, print a massage
+            print("linked list is empty")  # if head = none, print a massage
 
         else:  # then create a variable as n and assign  head  to it
             n = self.head
@@ -37,7 +37,7 @@ class DoublyLinkedList:  # create a new class  DoublyLinkedList
             new_node = Node(
                 data)  # if it is none then create new node and we create a node using node class and pass the data
             self.head = new_node  # after creating node we point to new node
-            self.len += 1  # increas length by 1
+            self.len += 1  # increase length by 1
 
         else:
             print("lined list is not empty")  # link list is not empty, print a massage
@@ -100,6 +100,7 @@ class DoublyLinkedList:  # create a new class  DoublyLinkedList
     def add_nodePosition(self, pos, data):  # create a method and pass the position and data
         new = Node()  # create a new node and set the data
         new.setData(data)
+
         if pos < 0 or pos > self.len - 1:  # set the given position is less than 0 or grater than length -  1
             return None  # then if it is return none
         elif pos == 0:  # checked  the position == 0
@@ -167,5 +168,3 @@ class DoublyLinkedList:  # create a new class  DoublyLinkedList
             count += 1  # increase count by 1
             n = n.nref  # get the next of the n in to n
         return count  # return the count
-
-
