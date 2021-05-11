@@ -2,7 +2,7 @@ class Node:  # Create a class named as Node
 
 
     def __init__(self):  # define the object
-        self.data = None  # define the attributes
+        self.data = None  # define the attributes and save data,nref and pref
         self.nref = None
         self.pref = None
 
