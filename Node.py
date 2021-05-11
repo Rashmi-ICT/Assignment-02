@@ -13,11 +13,11 @@ class Node: # Create a class named as Node
     def setNext(self,address): #set next data
         self.nref = address
 
-    def getNext(self): #get next data
+    def getNext(self): # get next data
         return self.nref
 
-    def setPrevious(self,address):
+    def setPrevious(self,address): # set previous address
         self.pref = address
 
-    def getPrevious(self):
+    def getPrevious(self): # get previous data
         return self.pref
