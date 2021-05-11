@@ -167,3 +167,5 @@ class DoublyLinkedList:  # create a new class  DoublyLinkedList
             count += 1  # increase count by 1
             n = n.nref  # get the next of the n in to n
         return count  # return the count
+
+
