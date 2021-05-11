@@ -1,6 +1,9 @@
 from Node import Node
 
 
+# Creat a Doubly Linked List (Traversing / Insertion / Deletion / searching)
+
+
 class DoublyLinkedList:  # create a new class  DoublyLinkedList
     def __init__(self):  # then create a constructor
         self.head = Node()  # creat a head and put on node
