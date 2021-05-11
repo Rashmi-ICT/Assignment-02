@@ -11,7 +11,7 @@ d.add_end(2222)
 d.add_end(567)
 
 print("\n")
-x = d.Dobly_Length()
+x = d.Doubly_Length()
 print("length",x)
 print("\n")
 
