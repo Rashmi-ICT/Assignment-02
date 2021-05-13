@@ -10,7 +10,9 @@ class DoublyLinkedList:  # create a new class  DoublyLinkedList
         self.head = None  # define head as none
         self.len = 0  # define DoublyLinkedList length as 0
 
-    def print_LL(self):  # method to foreword printing
+    # method to foreword printing
+
+    def print_LL(self):
         if self.head is None:  # check head is none or not
             print("linked list is empty")  # if head = none, print a massage
 
@@ -20,7 +22,9 @@ class DoublyLinkedList:  # create a new class  DoublyLinkedList
                 print(n.data, "-->", end=' ')
                 n = n.nref  # when n is none loop will stop
 
-    def print_LL_reverse(self):  # method to backward printing
+    # method to backward printing
+
+    def print_LL_reverse(self):
         print()
         if self.head is None:  # check head is none or not
             print("Linked list is empty")  # if head = none, print a massage
@@ -37,7 +41,8 @@ class DoublyLinkedList:  # create a new class  DoublyLinkedList
 
     def insert_empty(self, data):  # we create insert empty link list and take parameter self and data
         if self.head is None:  # firstly we check list empty or not
-            new_node = Node(data)  # if it is none then create new node and we create a node using node class and pass the data
+            new_node = Node(
+                data)  # if it is none then create new node and we create a node using node class and pass the data
             self.head = new_node  # after creating node we point to new node
             self.len += 1  # increase length by 1
 
@@ -112,7 +117,7 @@ class DoublyLinkedList:  # create a new class  DoublyLinkedList
             new.setData(data)
             count = 0  # create a variable and set it value as 0
             n = self.head  # create a variable and assign  head in to it
-            while count != pos -1 :  # run loop until count != position
+            while count != pos - 1:  # run loop until count != position
                 n = n.nref  # get the next of the n in to n
                 count += 1  # increase length by 1
             x = n.nref  # get the next of the end in to variable x
@@ -163,7 +168,9 @@ class DoublyLinkedList:  # create a new class  DoublyLinkedList
                 count += 1  # increase count by 1
             return n.data  # return  the data of the n
 
-    def Doubly_Length(self):  # create a new function for the doubly length
+    # create a new function for the doubly length
+
+    def Doubly_Length(self):
         n = self.head  # create a variable n and assign the head
         count = 0  # create a variable and set it value as 0
         while n is not None:  # run loop until n is not none
