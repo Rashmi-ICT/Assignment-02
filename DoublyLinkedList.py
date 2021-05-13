@@ -37,8 +37,7 @@ class DoublyLinkedList:  # create a new class  DoublyLinkedList
 
     def insert_empty(self, data):  # we create insert empty link list and take parameter self and data
         if self.head is None:  # firstly we check list empty or not
-            new_node = Node(
-                data)  # if it is none then create new node and we create a node using node class and pass the data
+            new_node = Node(data)  # if it is none then create new node and we create a node using node class and pass the data
             self.head = new_node  # after creating node we point to new node
             self.len += 1  # increase length by 1
 
@@ -98,11 +97,9 @@ class DoublyLinkedList:  # create a new class  DoublyLinkedList
             n.setNext(None)  # set the next of the end as none
         self.len -= 1  # decrease length by 1
 
-    # add the possitional node
+    # add the positional node
 
     def add_nodePosition(self, pos, data):  # create a method and pass the position and data
-        new = Node()  # create a new node and set the data
-        new.setData(data)
 
         if pos < 0 or pos > self.len - 1:  # set the given position is less than 0 or grater than length -  1
             return None  # then if it is return none
@@ -111,9 +108,11 @@ class DoublyLinkedList:  # create a new class  DoublyLinkedList
         elif pos == self.len - 1:  # checked given position self len -1
             self.add_end(data)  # then call the method add_end(data)
         else:
+            new = Node()  # create a new node and set the data
+            new.setData(data)
             count = 0  # create a variable and set it value as 0
             n = self.head  # create a variable and assign  head in to it
-            while count != pos:  # run loop until count != position
+            while count != pos -1 :  # run loop until count != position
                 n = n.nref  # get the next of the n in to n
                 count += 1  # increase length by 1
             x = n.nref  # get the next of the end in to variable x
