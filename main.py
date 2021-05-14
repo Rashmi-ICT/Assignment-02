@@ -87,11 +87,9 @@ Doubly.print_LL_reverse()
 print("==============================================================")
 print("\n SEARCHING \n")
 
-print("searching node prev", Doubly.searchPrev(5))
+Doubly.search_given(3)
 
-print("searching node ",Doubly.searchNode(5))
 
-print("searching node next", Doubly.searchNext(5))
 
 
 
