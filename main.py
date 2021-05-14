@@ -88,12 +88,11 @@ print("==============================================================")
 print("\n SEARCHING \n")
 
 y=Doubly.search_given(1)
-print(y,end=" >> ")
+print("1st node is",y)
 y=Doubly.search_given(2)
-print(y,end=" >> ")
-y=Doubly.search_given(3)
-print(y,end=" >> ")
+print("2nd node is",y)
 y=Doubly.search_given(4)
-print(y)
+print("4th node is",y)
+
 
 
