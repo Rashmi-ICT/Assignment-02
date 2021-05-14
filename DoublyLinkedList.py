@@ -41,8 +41,7 @@ class DoublyLinkedList:  # create a new class  DoublyLinkedList
 
     def insert_empty(self, data):  # we create insert empty link list and take parameter self and data
         if self.head is None:  # firstly we check list empty or not
-            new_node = Node(
-                data)  # if it is none then create new node and we create a node using node class and pass the data
+            new_node = Node(data)  # if it is none then create new node and we create a node using node class and pass the data
             self.head = new_node  # after creating node we point to new node
             self.len += 1  # increase length by 1
 
