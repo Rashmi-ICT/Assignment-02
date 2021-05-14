@@ -149,30 +149,44 @@ class DoublyLinkedList:                                  # create a new class  D
 
     # create  search_given
 
-    def search_given(self, pos):                                   # create a method and pass the position
+    '''def search_given(self, pos):                                   # create a method and pass the position
         if pos < 0 or pos > self.len - 1:                          # checked the given position is less than  or 0 or grater than length - 1
-            return None  # if it is return none
-        elif pos == 0:  # # if pos == 0 , then return data of the the head
+            return None                                            # if it is return none
+        elif pos == 0:  
             return self.head.data
-        elif pos == self.len - 1:  # if position = length - 1 ,then assign head to variable n
+        elif pos == self.len - 1:                                  # if position = length - 1 ,then assign head to variable n
             n = self.head
-            while n.nref is not None:  # run loop until next of the n is not non , get  next of n in to variable n
+            while n.nref is not None:                              # run loop until next of the n is not non , get  next of n in to variable n
                 n = n.nref
-            return n.data  # when next of the n is none return data of the n
+            return n.data                                          # when next of the n is none return data of the n
         else:
-            count = 0  # create a variable and set it value as 0
-            n = self.head  # create a variable and assign  head in to it
-            while count != pos:  # run loop until count != position
-                n = n.nref  # get the next of the n in to n
-                count += 1  # increase count by 1
-            return n.data  # return  the data of the n
+            count = 0                                              # create a variable and set it value as 0
+            n = self.head                                          # create a variable and assign  head in to it
+            while count != pos:                                    # run loop until count != position
+                n = n.nref                                         # get the next of the n in to n
+                count += 1                                         # increase count by 1
+            return n.data                                          # return  the data of the n'''
+
+    def searching(self, pos):
+            if self.head is None:  # searching linked list is empty
+                print(" Linked List is Empty ")  # if linked list is empty print this statement
+            else:
+                if self.len > pos:
+                    current = self.head
+                    for i in range(0, pos):
+                        if current.next is not None:
+                            current = current.next
+                    current = current.data
+                    print(" DLL Node is :", current)
+                else:
+                    print(" Enter correct Pos ")
 
     # create a new function for the doubly length
 
     def Doubly_Length(self):
-        n = self.head  # create a variable n and assign the head
-        count = 0  # create a variable and set it value as 0
-        while n is not None:  # run loop until n is not none
-            count += 1  # increase count by 1
-            n = n.nref  # get the next of the n in to n
-        return count  # return the count
+        n = self.head                                                # create a variable n and assign the head
+        count = 0                                                    # create a variable and set it value as 0
+        while n is not None:                                         # run loop until n is not none
+            count += 1                                               # increase count by 1
+            n = n.nref                                               # get the next of the n in to n
+        return count                                                 # return the count
