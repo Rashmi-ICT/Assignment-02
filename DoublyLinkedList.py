@@ -19,7 +19,7 @@ class DoublyLinkedList:  # create a new class  DoublyLinkedList
         else:  # then create a variable as n and assign  head  to it
             n = self.head
             while n is not None:  # while n is not none print the value of n and get next value of the DoublyLinkedList in to n
-                print(n.data, "-->", end=' ')
+                print(n.data, ">>", end=' ')
                 n = n.nref  # when n is none loop will stop
 
     # method to backward printing
@@ -34,7 +34,7 @@ class DoublyLinkedList:  # create a new class  DoublyLinkedList
             while n.nref is not None:  # get the next value of the n and run loop until next value of the n is not none to get next of the n
                 n = n.nref
             while n is not None:  # whlie n is not none print the value n and get the previous value of the n in to variable n
-                print(n.data, "-->", end=" ")
+                print(n.data, ">>", end=' ')
                 n = n.pref
 
     # insert empty linked list
@@ -48,7 +48,7 @@ class DoublyLinkedList:  # create a new class  DoublyLinkedList
         else:
             print("lined list is not empty")  # link list is not empty, print a massage
 
-    # add the begining linked list
+    # add the beginning linked list
 
     def add_begin(self, data):
         new_node = Node()  # create a new node pass the data parameter
@@ -59,7 +59,7 @@ class DoublyLinkedList:  # create a new class  DoublyLinkedList
             new_node.nref = self.head  # define  the next of the created  new node is to  current head
             self.head.pref = new_node  # previous of the current head is new node
             self.head = new_node  # current head is new node
-        self.len += 1  # increas length by 1
+        self.len += 1  # increase length by 1
 
     # add the  end linked list
 
